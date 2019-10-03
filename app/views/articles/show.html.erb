@@ -1,0 +1,15 @@
+<div class="container">
+  <div class="col-md-12">
+    <div class="content_post margin-top-5per" style="background-image: url(<%= @article.image %>);"></div>
+    <h2><%= @article.title %></h2>
+    <p class=""><%= simple_format(@article.text) %></p>
+    <p class="text-right">作成者：<%= @article.user.name %></p>
+    <p class="text-right"><%= @article.created_at.strftime("%Y年%-m月%-d日") %></p>
+  </div>
+    <% if user_signed_in? && current_user.id == @article.user_id %>
+      <%= link_to '編集', edit_article_path(@article), class: "btn btn-warning margin-top-2per" %>
+      <%= button_to '削除', article_path(@article), method: :delete,class: "btn btn-danger margin-top-2per" %>
+    <% end %>
+</div>
+<footer>
+</footer>

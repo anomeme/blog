@@ -1,0 +1,17 @@
+<div class="container">
+  <% @articles.each do |article| %>
+    <%= link_to article do %>
+      <div class="col-md-4 contents">
+        <div class="content_post trim-image-to-circle" style="background-image: url(<%= article.image %>);"></div>
+        <p class="title"><%= article.title %></p>
+        <p class="text-right">作成者：<%= article.user.name %></p>
+        <p class="text-right"><%= article.created_at.strftime("%Y年%-m月%-d日") %></p>
+      </div>
+    <% end %>
+  <% end %>
+</div>
+<div class="row">
+  <%= paginate(@articles) %>
+</div>
+<footer>
+</footer>

@@ -1,0 +1,16 @@
+<%= form_with model: article do |a| %>
+  <div class="margin-top-2per"><%= image_tag 'header.jpg', class: 'header-image'%></div>
+  <div class="form-group margin-top-5per" >
+    <%= a.label :title, 'タイトル'%>
+    <%= a.text_field :title, class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= a.label :text, '本文'%>
+    <%= a.text_area :text,rows:7,  class: "form-control" %>
+  </div>
+  <div class="form-group">
+    <%= a.label :image, '画像'%>
+    <%= a.text_field :image, class: "form-control" %>
+  </div>
+  <p><%= a.submit '投稿' , class: "btn btn-success"%></p>
+<% end %>

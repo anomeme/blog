@@ -1,0 +1,153 @@
+@import "bootstrap"; 
+@import "font-awesome";
+//= require jquery_ujs
+
+body{
+  background-image: url("https://1.bp.blogspot.com/-Exp-1JP6MGc/Ut2GsQ7iohI/AAAAAAAAG10/sxhCWB32sWQ/s2560/night-view-wallpaper-6972520641_8825581241_o.jpg");
+  background-size: cover;
+  font-family: serif;
+}
+
+.notice{
+  color: #fff;
+  margin-left: 10%;
+}
+
+.alert{
+  color: #fff;
+  margin-left: 10%;
+}
+
+.top{
+  padding: 15px 0 15px ;
+  background-color: black;
+  color: #fff;
+  font-size: 30px;
+  width: 100%;
+  text-align: center;
+  font-family: serif;
+}
+
+.home{
+  text-align: center;
+  color: #fff;
+  list-style: none;
+}
+
+.home a{
+  font-size: 30px;
+  color: #fff;
+  list-style: none;
+}
+
+.header{
+  margin-left: 5%;
+  width: 100%;
+  color: #fff;
+  text-align: left;
+}
+
+.create{
+  text-align: right;
+  color: #fff;
+  width: 100%;
+}
+
+.create_btn{
+  margin: 0 50px 10px 0;
+}
+
+h2{
+  margin-top: 2%;
+}
+
+.title{
+  font-size: 20px;
+  text-align: center;
+}
+
+.contents{
+  border-radius: 20px;
+  float: left;
+  margin: 10px auto 0;
+  border: 1px solid;
+  padding-top: 10px;
+  background-color: rgba(255, 255, 255, 0.753);
+}
+
+a{
+  color: rgb(99, 83, 83);
+}
+
+p{
+  font-size: 15px;
+}
+
+.col-md-12{
+  border: 1px solid rgb(109, 199, 187);
+  background-color: #fff;
+}
+
+.margin-top-5per{
+  margin-top: 5%;
+}
+
+.margin-top-2per{
+  margin-top: 2%;
+}
+
+.image{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+}
+
+.header-image{
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.content_post {
+  margin-top: 20px;
+  height: 400px;
+  color: #fff;
+  background-size: cover;
+  background-position: center center;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba($black,0.2);
+  }
+
+.trim-image-to-circle {
+  width:  250px;       /* ※縦横を同値に */
+  height: 250px;       /* ※縦横を同値に */
+  border-radius: 50%;  /* 角丸半径を50%にする(=円形にする) */
+  background-position:  center;  /* 横長画像の左上を基準に表示 */
+  display: inline-block;          /* 複数の画像を横に並べたい場合 */
+  margin-left: 12%;
+}
+
+.row{
+  margin-top: 50px;
+  margin-left: 40%;
+}
+
+footer{
+  background-color: black;
+  height: 30px;
+  width: 100%;
+  margin-top: 5%;
+}
+
+.in_box{
+  font-size: 10px;
+  width: 300px;
+  text-align: center;
+  border-radius: 20px;
+  float: left;
+  margin: 10px auto 0;
+  border: 1px solid;
+  padding: 20px 0 20px;
+  background-color: rgba(255, 255, 255, 0.753);
+  margin-left: 40%;
+}
